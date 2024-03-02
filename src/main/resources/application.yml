@@ -1,0 +1,58 @@
+#server port
+server:
+  port: 9095
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/user_master_api
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  mail:
+    host: smtp.gmail.com
+    password: your securiy id smtp
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: youremail@gmail.com
+    
+user:
+  profile:
+    image:
+      path: images/users/
+      
+jwt:
+  secret: registeruserappapimasterhgoiangoabngasgashgoiashjdgpohasoghjwapegnosaghjpsadgoasghjoasbgoshgo
+admin:
+  role:
+    id: wetrsdfwetwfasfwdf
+normal:
+  role:
+    id: awgfasfwsdqtgasfwqgsdtg
+
+# Social config
+googleClientId: 690061659225-q95tmb60ckcnfptop0s6b53e6pb09.apps.googleusercontent.com
+
+# You can uncomment and add the googleSecret here if needed.
+# googleSecret: GOCSPX-idkpJsu4Qye4BMO7no7qURFU6R
+
+newPassword: awhsfiohbrwqchfwgfivwqguiprfwifyco
+
+reg-app:
+  messages:
+     regMailSubject: User Registration Success
+     regMailBodyTemplateFile: welcome.txt
+     
+     
+     
