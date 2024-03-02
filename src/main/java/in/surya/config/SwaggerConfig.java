@@ -53,18 +53,7 @@ public class SwaggerConfig {
     }
 
 
-    private ApiInfo getApiInfo() {
-
-        ApiInfo apiInfo = new ApiInfo(
-                "Electronic Store Backend : APIS ",
-                "This is backend project created by LCWD",
-                "1.0.0V",
-                "https://www.learncodewithdurgesh.com",
-                new Contact("Durgesh", "https://www.instagram.com/durgesh_k_t", "learncodewithdurgesh@gmail.com"),
-                "License of APIS",
-                "https://www.learncodewithdurgesh.com/about",
-                new ArrayDeque<>()
-        );
+    
 
         return apiInfo;
 
